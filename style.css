@@ -1,0 +1,1917 @@
+/* Description: Website made by 'MyTravel' */
+/* Author: Teo Jia En, Jayne Wong, Chenise Mok */
+/* Date: 5/11/2022 */
+/* Validated: OK 20/11/2022 */
+
+  
+  /************************************************/
+ /**********Fixed styles for every page**********/
+/***********************************************/
+
+/* Resets default margin and padding for the entire website*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: serif;
+}
+
+/* General basic website style */
+body {
+	min-height: 100vh;
+}
+
+/***** Main heading style *****/
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #111;
+	text-align:center;
+}
+
+span.border2 {
+	background-color: #111;
+	top:16%;
+	padding: 18px;
+	font-size: 50px;
+	padding-left:1px;
+	letter-spacing: 10px;
+	border-radius: 20px;
+	font-weight: 700;
+	background-color:transparent;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+span.border3 {
+	background-color: #111;
+	top:23.5%;
+	padding: 18px;
+	padding-left: 20px;
+	font-size: 30px;
+	letter-spacing: 10px;
+	border-radius: 20px;
+	font-weight: 700;
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.line{
+	top: 10%;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 80px;
+}
+
+span.border4 {
+	background-color: #111;
+	color: black;
+	top:27%;
+	padding: 18px;
+	padding-left: 100px;
+	font-size: 50px;
+	letter-spacing: 10px;
+	border-radius: 20px;
+	font-weight: 700;
+	background-color:transparent;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/***** Sub-heading style *****/
+.subheading {
+	color: #777;
+	text-align:center;
+	padding: 50px 80px;
+	text-align: justify;
+}
+
+/** Navigation bar style **/
+header {
+	position: fixed;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	
+}
+
+header:hover {
+	background-image: linear-gradient(135deg, #243949 10%, #517fa4 100%);
+}
+
+header .navbar {
+	position: absolute;
+	margin-top: 6px;
+	margin-left: 260px;
+	max-width: 100%;
+}
+
+.navbar .fa {
+	margin-right: 8px;
+}
+
+.navbar .fa-solid {
+	margin-right: 8px;
+}
+
+header .navbar ul {
+	list-style-type: none;
+}
+
+header .navbar ul li {
+	position: relative;
+	float: left;
+}
+
+header .navbar ul li a {
+	font-size: 18px;
+	padding: 20px;
+	color: #8cbfd1;
+	display: block;
+	text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+	background: none;
+	color: 	rgb(90,163,189);
+	text-decoration: none;
+}
+
+header .navbar ul li ul {
+	position: absolute;
+	left: 0;
+	width: 180px;
+	margin-top:2px;
+	background-image: linear-gradient(135deg, #243949 10%, #517fa4 100%);
+	display: none;
+}
+
+header .navbar ul li ul li {
+	width:100%;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:hover > ul{
+	display: initial;
+}
+
+header .navbar ul li:focus > ul,
+header .navbar ul li:hover > ul {
+	display: initial;
+}
+
+#menu-bar{
+	display: none;
+}
+
+header label {
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+	margin-top: 25px;
+	margin-right: 15px;
+	display: none;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+@media(max-width:991px) {
+	header {
+		padding: 10px;
+	}
+	
+	header label { 
+		display: initial;
+	}
+	
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-image: linear-gradient(135deg, #243949 10%, #517fa4 100%);
+		border-top: 1px solid rgba(0,0,0,.1);
+		display: none;
+	}
+	
+	header .navbar ul li {
+		width: 100%;
+	}
+	
+	header .navbar ul li ul {
+		position: relative;
+		width:100%;
+	}
+	
+	header .navbar ul li ul li{
+		background: #eee;
+	}
+	
+	#menu-bar:checked ~ .navbar {
+		display: initial;
+	}
+}
+	
+/** Logo style **/	
+.logo {
+	max-width: 210px;
+	margin: 12px;
+}
+
+/* Footer style */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #8cbfd1;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  background-image: linear-gradient(135deg, #243949 10%, #517fa4 100%);
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__addr p.footerhead {
+	font-size: 16px;
+	font-weight:bold;
+	color: #8cbfd1;
+}
+
+.footer__addr img {
+	max-width:250px;
+}
+
+.footer__addr p {
+  margin-top: 1.3em;
+}
+
+.footer__addr .footeraboutus a {
+	font-style: normal;
+	color: #dadada;
+}
+
+.footer__nav .nav__item .nav__title {
+	font-size:16px;
+	font-weight:bold;
+	color:#8cbfd1;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(217,217,214,0.5);
+  border-radius: 100px;
+  color: #dadada;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer__btn:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #dadada;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.footer .legal p, .footer .legal a {
+  color: #dadada;
+}
+  
+.legal a:hover {
+  color: rgb(90,163,198);
+  text-decoration:underline;
+}
+
+
+
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+  /*******************************************************************/
+ /***** Style for any page which has id link to sections ************/
+/*******************************************************************/
+.internal-link {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #111;
+	text-align: center;
+}
+
+.internal-link a {
+	text-decoration: none;
+	color: #000;
+}
+
+.internal-link a:hover{
+	color: rgb(90,163,189);
+}
+
+  /****************************************/
+ /*    Style of every section of content */
+/****************************************/
+.content{
+	position: relative; 
+	color: #ddd;
+	background-color: white ;
+	padding:50px 80px;
+	text-align: justify;
+}
+
+ /***************************************************************/
+ /*    Content heading style all pages except feedback.html     */
+/***************************************************************/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color:transparent;
+  color: #f7f7f7;
+}
+
+.caption .border a {
+	text-decoration:none;
+	color: white;
+}
+
+.caption .border a:hover {
+	text-decoration:none;
+	color: #282E34;
+}
+
+.border {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+	text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #000, 0 0 8px #000, 0 0 10px #000, 0 0 12px #000, 0 0 14px #000; }
+}
+
+  /**********************************/
+ /***** Style for aboutus.html *****/
+/**********************************/
+
+  /***********************************/
+ /*  Style for background images	*/
+/***********************************/
+.bgimg-holiday, 
+.bgimg-holiday2,
+.bgimg-holiday3,
+.bgimg-holiday4
+{
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg-holiday {
+/* This image is from https://www.cntraveler.com/story/holiday-air-travel-will-be-a-lot-busier-this-year-says-new-data */
+  background-image: url("../images/holiday.jpg");
+  min-height: 400px;
+}
+
+.bgimg-holiday2 {
+/* This image is from https://www.destinationanalysts.com/wp-content/uploads/2020/05/image-1030x626.png*/
+  background-image: url("../images/holiday2.png");
+  min-height: 400px;
+}
+
+.bgimg-holiday3 {
+/* This image is from https://www.tts.com/wp-content/uploads/2016/02/Corporate-travel-best-practices.jpg */
+  background-image: url("../images/holiday3.jpg");
+  min-height: 400px;
+}
+
+.bgimg-holiday4 {
+/* This image is from https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80 */
+  background-image: url("../images/holiday4.jpeg");
+  min-height: 400px;
+}
+
+  /**************************/
+ /*		Styling content    */
+/**************************/
+.company-container{
+	width: 50%;
+	height: 60vh;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	float:left;
+}
+
+.holidaydiv{
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 25px;	
+	color: #111;
+	text-align:center;
+	position: relative; 
+	background-color: white ;
+	padding:50px 80px;
+	margin:20px;
+}
+
+.holidayspan{
+	font-size:33px;
+	transform: scale(0.98);
+}
+
+.briefcontent{
+	text-align:center;
+	margin-top:80px;
+	margin-bottom: 80px;
+	color: rgb(90,163,189);
+	max-width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.top-p{
+	float:left;
+	font-size:100px;
+	padding-bottom:1px;
+}
+
+.bottom-p{
+	font-size: 20px;
+	font-style:italic;
+}
+
+  /********************************/
+ /*		Styling external link    */
+/********************************/
+.aboutusbutton a{
+	border: none;
+	color: black;
+	padding: 16px ;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	cursor: pointer;
+	border: 2px solid #008CBA;
+	width: 15%;
+}
+
+.aboutusbutton:hover a {
+	background-color: #008CBA;
+	color: white;
+}
+
+  /************************/
+ /*		Styling table    */
+/************************/
+.table-aboutus td, .table-aboutus th
+{
+	padding: 5px;
+	border-spacing:10px;
+	width:60%;
+	border-bottom-style:solid;
+	border-collapse: collapse;
+	border-color:#D9D9D6;
+	color: #000;
+}
+
+  /*********************************/
+ /*		Styling image slider      */
+/*********************************/
+.companyimageslider{
+	max-width: 35%;
+}
+
+  /**************************/
+ /*		Styling lines      */
+/**************************/
+.line{
+	top:10%;
+	margin-left:200px;
+	margin-right:200px;
+	margin-top:80px;
+}
+
+  /**********************************************************************/
+ /***** Starting from here: Style specific for culturefestival.html ****/
+/**********************************************************************/
+
+  /*************************************/
+ /* 	Style for background images	  */
+/*************************************/
+.bgimg-malay, .bgimg-cny, .bgimg-indian{
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg-malay{
+	/* This image is from https://asianinspirations.com.au/experiences/5-important-cultural-festivals-and-celebrations-in-malaysia/ */
+	background-image: url("../images/hariraya.jpg");
+	min-height: 400px;
+}
+
+.bgimg-cny{
+	/* This image is from https://www.chinahighlights.com/festivals/traditional-festival/ */
+	background-image: url("../images/cny.jpg");
+	min-height: 400px;
+}
+
+.bgimg-indian{
+	/* This image is from https://www.wonderfulmalaysia.com/faq/deepavali.htm */
+	background-image: url("../images/deepavali.jpg");
+	min-height: 400px;
+}
+
+  /*********************************/
+ /* 	Style for subheadings	  */
+/*********************************/
+
+.sub-heading-malay,
+.sub-heading-chinese,
+.sub-heading-indian
+{
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.sub-heading-malay{
+	position: relative;
+	width: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text; 
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #eee, rgb(34,139,34));
+}
+
+.sub-heading-chinese{
+	position: relative;
+	width: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text; 
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #eee, rgb(255,0,0));
+}
+
+.sub-heading-indian{
+	position: relative;
+	width: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text; 
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #eee, rgb(0,0,153));
+}
+
+  /********************************/
+ /*		Style for descriptions	 */
+/********************************/
+.bold-malay {
+	color: rgb(34,139,34);
+	font-weight: bold;
+}
+
+.bold-chinese {
+	color: rgb(255,0,0);
+	font-weight: bold;
+}
+
+.bold-indian {
+	color: rgb(0,0,153);
+	font-weight: bold;
+}
+
+.culture{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+}
+
+.culturep{
+	text-align: center;
+	font-size: 22px;
+	padding: 15px;
+	color: #000;
+}
+
+  /*****************************************************************/
+ /***** Starting from here: Style specific for 'feedback.html *****/
+/*****************************************************************/
+
+  /****************************/
+ /*    Style for fieldset    */
+/****************************/
+fieldset {
+	margin-right: 30px;
+	margin-left: 30px;
+	border: 2px solid rgb(0,0,139);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+}
+
+  /*******************************/
+ /* 	Style for 'Rate' table  */
+/*******************************/
+.s-caption {
+	font-weight: normal;
+	font-size: smaller;
+}
+
+caption {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.styled-table {
+    border-collapse: collapse;
+	margin-left: 15px;
+    font-size: 0.9em;
+    font-family: Georgia, serif;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table tr {
+    color: #000;
+    text-align: left;
+	font-size: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 12px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: rgb(90,163,189,0.2);
+}
+
+  /*******************************************/
+ /* 	Style for submit and cancel button  */
+/*******************************************/
+
+input[type=submit], input[type=reset]{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 80px;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-submit {
+	margin-top:15px;
+	margin-left:30px;
+}
+
+input[type=submit]{
+	font-size: 17px;
+	color: rgb(106,70,178);
+}
+
+input[type=reset]{
+	font-size: 17px;
+}
+
+  /*********************************************************************/
+ /* 	Style for personal information table and favourite part table */
+/*********************************************************************/
+.personal td, .t-feedback td {
+	padding: 8px;
+}
+
+.personal tr, .t-feedback tr{
+	font-size: 20px;
+}
+
+  /************************************************************************/
+ /* 	Style for 'Choose your favourite part(s) of this website' table  */
+/************************************************************************/
+.f-check-head{
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.f-check {
+  display: block;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Hide the browser's default checkbox */
+.f-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 18px;
+  background-color: rgb(211,211,211);
+  margin-left: 10px;
+}
+	
+.f-check:hover input ~ .checkmark {
+  background-color: rgb(240,240,240);
+}
+
+.f-check input:checked ~ .checkmark {
+  background-color: rgb(106,70,140);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.f-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.f-check .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 6px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+  /***********************************/
+ /* 	Style for suggestion table  */
+/***********************************/
+.suggestion {
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.suggestion tr td {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+ /************************************************************/
+ /***** Starting from here: Style specific for food.html *****/
+/************************************************************/
+
+  /*************************************/
+ /* 	Style for background images	  */
+/*************************************/
+.bgimg-laksa, .bgimg-kuehtiao, .bgimg-kolo, .bgimg-nasi{
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg-laksa{
+	/* This image is from https://www.mstar.com.my/xpose/resipi/2019/06/19/laksa-sarawak */
+	background-image: url("../images/laksa.png");
+	min-height: 400px;
+}
+
+.bgimg-kuehtiao{
+	/* This image is from https://rasamalaysia.com/char-kuey-teow/ */
+	background-image: url("../images/charkuehtiao.jpg");
+	min-height: 400px;
+}
+
+.bgimg-kolo{
+	/* This image is from https://www.facebook.com/saysdotcom/photos/a.234827813221128/1007487972621771/?type=3 */
+	background-image: url("../images/kolomee.jpg");
+	min-height: 400px;
+}
+
+.bgimg-nasi{
+	/* This image is from https://www.timeout.com/kuala-lumpur/food-and-drink/best-nasi-lemak-in-kl */
+	background-image: url("../images/nasilemak.jpg");
+	min-height: 400px;
+}
+
+  /*********************************/
+ /* 	Style for subheadings	  */
+/*********************************/
+.food {
+	color: #000;
+	text-align: justify;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.food-r {
+	color: #000;
+	text-align: justify;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: right;
+}
+
+.food-nasi, .food-ckt {
+	color: rgb(164,116,73);
+}
+
+.food-laksa, .food-kolo {
+	color: rgb(139,0,0,0.8);
+}	
+
+
+  /*********************************/
+ /* 	Style for descriptions	  */
+/*********************************/
+.foodp {
+	text-align: justify;
+	font-size: 22px;
+	padding: 10px;
+	color: #000;
+}
+
+.foodp-r {
+	text-align: justify;
+	font-size: 22px;
+	padding: 10px;
+	text-align: right;
+	color: #000;
+}
+
+  /*************************************/
+ /* 	Style for external links	  */
+/*************************************/
+.food-link{
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 2px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	display:block;
+	font-size: 22px;
+	text-align: center;
+	width: 60%;
+	margin-top: 8px;
+}
+
+.food-link-r {
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 2px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	font-size: 22px;
+	text-align: center;
+	width: 60%;
+	float: right;
+	margin-top: 8px;
+}
+
+.food-link:hover, .food-link-r:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+  /********************************************************************************/
+ /****** Starting from here: style for both touristspots.html and hotel.html *****/
+/********************************************************************************/
+
+  /**************************************************************/
+ /*    Body style of both touristspots.html and hotel.html     */
+/**************************************************************/
+
+.placesbody {
+  font: 400 15px/1.8 serif;
+  color: #777;
+  height: 100%;
+}
+
+  /*******************************************************************************/
+ /*	  Styling image slider of both touristspots.html, hotel.html, feedback.html */
+/*******************************************************************************/
+.container {
+	width: 50%;
+	height: 60vh;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	float: left;
+}
+
+.container2 {
+	width: 50%;
+	height: 60vh;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	float: right;
+}
+
+.swiper {
+	width: 80%;
+	height: fit-content;
+	
+}
+
+.swiper-slide img {
+	width: 100%;
+	border-radius: 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+	color: transparent;
+	width: 5%;
+	
+}
+
+.swiper .swiper-pagination-bullet-active {
+	background: white;
+}
+
+  /*****************************************************************************************/
+ /*     Change font color of paragraphs and table of touristspots.html and hotel.html     */
+/*****************************************************************************************/
+
+.placesbody p{
+	color: #000;	
+}
+
+.placesbody table{
+	color: #000;	
+}
+
+  /************************************************************** *********/
+ /*    Style content subheadings of touristspots.html and hotel.html     */
+/************************************************************************/
+
+.head {
+	font-weight: bold;
+	font-size: 25px;
+	color: #000;
+}
+
+  /********************************************************************/
+ /***** Starting from here: Style specific for touristspots.html *****/
+/********************************************************************/
+
+  /**********************************/
+ /*   Styling Background Images    */
+/**********************************/
+
+.bgimg-twintower, .bgimg-batucaves, .bgimg-skycab, .bgimg-borneo, .bgimg-kinabalu {
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.bgimg-twintower {
+/* This image is from https://www.tripadvisor.com/Attraction_Review-g298570-d317521-Reviews-Petronas_Twin_Towers-Kuala_Lumpur_Wilayah_Persekutuan.html */
+	background-image: url("../images/twin.jpg");
+	min-height: 400px;
+}
+
+.bgimg-batucaves {
+/* This image is from http://tickabout.com/wp-content/uploads/2018/10/batu-caves-batu-caves-malaysia-lord-murugan-statue-1540386425c8lp4.jpg */
+	background-image: url("../images/batu10.jpg");
+	min-height: 400px;
+}
+
+.bgimg-skycab {
+/* This image is from https://www.tripadvisor.in/Attraction_Review-g298283-d645113-Reviews-Panorama_Langkawi_SkyCab-Langkawi_Langkawi_District_Kedah.html */
+	background-image: url("../images/sky2.jpg");
+	min-height: 400px;
+}
+
+.bgimg-cameron {
+/* This image is from https://www.tripadvisor.com/Tourism-g298292-Cameron_Highlands_Pahang-Vacations.html */
+	background-image: url("../images/cameron.jpg");
+	min-height: 400px;
+}
+
+.bgimg-borneo {
+/* This image is from https://i.pinimg.com/originals/fb/41/20/fb412008ba597d89f64738c6ecb9a149.png  */
+	background-image: url("../images/borneo.png");
+	min-height: 400px;
+}
+
+.bgimg-kinabalu {
+/* This image is from https://blog.tripcetera.com/wp-content/uploads/2019/05/55640761_ML.jpg */
+	background-image: url("../images/balu6.jpg");
+	min-height: 400px;
+}
+
+  /*******************************/
+ /* 		Styling Table		*/
+/*******************************/
+
+.table-petronas th, .table-petronas td, 
+.table-bcaves td, .table-bcaves th,
+.table-langkawi td, .table-langkawi th,
+.table-museum td, .table-museum th
+{
+	padding: 5px;
+	border-spacing:10px;
+	width:60%;
+	border-bottom-style:solid;
+	border-collapse: collapse;
+	border-color:#D9D9D6;
+}
+
+.table-petronas,
+.table-bcaves,
+.table-museum
+{
+	padding:5px;
+	margin:5px;
+	padding-bottom:10px;
+}
+
+  /*************************************************************/
+ /***** Starting from here: Style specific for hotel.html *****/
+/*************************************************************/
+
+  /*******************************/
+ /*  Styling Background Images  */
+/*******************************/
+.bgimg-wolo, .bgimg-blue, .bgimg-lake, .bgimg-rock, .bgimg-westin {
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.bgimg-wolo {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298570-d5541565-Reviews-WOLO_Kuala_Lumpur-Kuala_Lumpur_Wilayah_Persekutuan.html */
+	background-image: url("../images/wolo4.jpg");
+	min-height: 400px;
+}
+
+.bgimg-blue {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298303-d564445-Reviews-Cheong_Fatt_Tze_The_Blue_Mansion-George_Town_Penang_Island_Penang.html  */
+	background-image: url("../images/blue.jpg");
+	min-height: 400px;
+}
+
+.bgimg-lake {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298294-d308041-Reviews-The_Lakehouse_Cameron_Highlands-Ringlet_Cameron_Highlands_Pahang.html  */
+	background-image: url("../images/lakehouse.jpg");
+	min-height: 400px;
+}
+
+.bgimg-rock {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g635527-d1485478-Reviews-Hard_Rock_Hotel_Penang-Batu_Ferringhi_Penang_Island_Penang.html */
+	background-image: url("../images/rock.jpg");
+	min-height: 400px;
+}
+
+.bgimg-westin {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298283-d301798-Reviews-The_Westin_Langkawi_Resort_Spa-Langkawi_Langkawi_District_Kedah.html   */
+	background-image: url("../images/westin.jpg");
+	min-height: 400px;
+}
+
+  /*******************************/
+ /* 		Styling Review		*/
+/*******************************/
+
+.review{
+	max-width: 30%;
+	height: auto;
+}
+
+.reviewdetail{
+	font-size: 12.5px;
+	color: grey;
+	font-family: sans-serif;
+}
+
+
+  /*******************************/
+ /* 	Styling Contact		    */
+/*******************************/
+
+.tel {
+	text-decoration: none;
+	color: black;
+}
+
+.tel:hover {
+	text-decoration:underline;
+	color: rgb(90,163,189);
+}
+
+  /*******************************/
+ /* 	Styling Email and Maps	*/
+/*******************************/
+.email {
+	text-decoration: none;
+	color: black;
+}
+.email:hover{
+	text-decoration: underline;
+	color: rgb(90,163,189);
+}
+
+  /********************************/
+ /* 		Styling Table		 */
+/********************************/
+
+.table-rock td, .table-rock th,
+.table-westin td, .table-westin th
+{
+	padding: 5px;
+	border-spacing:10px;
+	width:60%;
+	border-bottom-style:solid;
+	border-collapse: collapse;
+	border-color:#D9D9D6;
+}
+
+.table-rock, .table-westin {
+	padding:5px;
+	margin:5px;
+	padding-bottom:10px;
+}
+
+  /****************************************/
+ /***** Style for yourgroupname.html *****/
+/****************************************/
+
+  /*******************************/
+ /* 		Styling Images		*/
+/*******************************/
+
+.ppl-gallery {
+	margin-top: 50px;
+	border: 1px solid #ccc;
+}
+
+.ppl-gallery:hover {
+  border: 1px solid #777;
+}
+
+.ppl-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.ppl-desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+  /****************************/
+ /* Styling Responsive Images*/
+/****************************/
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 32.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.groupdescription{
+	padding:6px;
+}
+
+  /****************************/
+ /*		 Styling Title		 */
+/****************************/
+
+.grppage h1, 
+h2 {
+	text-align:center;
+	position:static;
+}
+
+.grppage h1 {
+	margin-top: 50px;
+	font-size:50px;
+}
+
+h2 {
+	margin-top: 200px;
+	font-size:35px;
+}
+
+.grppage {
+	background-color: #fff;
+	display: inline;
+	padding-bottom: 40px;
+}
+
+
+  /************************************/
+ /*		 Styling descriptions		 */
+/************************************/
+.groupdescription {
+	font-size: 22px;
+	margin-left: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ppl-desc {
+	font-size: 24px;
+}
+
+.nameofgroup {
+	font-weight: bold;
+	font-size: 26px;
+}
+
+  /*****************************************************************/
+ /***** Starting from here: Style specific for 'language.html *****/
+/*****************************************************************/
+
+  /*************************************/
+ /* 	Style for background images	  */
+/*************************************/
+
+.bgimg-bm {
+/* This image is from https://theculturetrip.com/asia/malaysia/articles/11-beautiful-words-to-make-you-fall-in-love-with-the-malay-language/ */
+	background-image: url("../images/bm-bg.jpg");
+	min-height: 400px;
+}
+
+.bgimg-chinese {
+/* This image is from https://towardsdatascience.com/automate-flash-cards-creation-for-language-learning-with-python-67871f4d23b3 */
+	background-image: url("../images/chinese1.jpg");
+	min-height: 400px;
+}
+
+.bgimg-eng {
+/* This image is from https://www.shutterstock.com/image-vector/english-language-background-147327044 */
+	background-image: url("../images/bg-eng.jpeg");
+	min-height: 400px;
+}
+
+.bgimg-bm, .bgimg-eng, .bgimg-chinese {
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+  /*****************************************/
+ /* 	Style for brief descriptions	  */
+/*****************************************/
+.custom-malay, .custom-chinese, .custom-english{
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 25px;
+	color: #000;
+}
+
+  /*****************************/
+ /* 	Style for tables	  */
+/*****************************/
+
+.phrase {
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.head-center {
+	font-weight: bold;
+	font-size: 25px;
+	color: #000;
+	text-align:center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+/* Malay section */
+.styled-table-malay {
+	margin-right: auto;
+	margin-left: auto;
+    border-collapse: collapse;
+    font-size: 22px;
+    font-family: Georgia, serif;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table-malay th,
+.styled-table-malay td {
+    padding: 14px 14px;
+}
+
+.styled-table-malay tbody tr {
+    border-bottom: 1px solid #fff;
+}
+
+.styled-table-malay tbody tr:nth-of-type(even) {
+    background-color: rgb(173,216,230,0.7);
+}
+
+.styled-table-malay tbody tr {
+	text-align: center;
+	background-color: #fff;
+    color: #000;
+	font-size: 22px;
+}
+
+.link-malay {
+	width: 25%;
+	font-size: 22px;
+	text-align: center;
+	color: #696969;
+	letter-spacing: 2px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.link-malay:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Chinese section */
+
+.styled-table-chinese {
+	margin-right: auto;
+	margin-left: auto;
+    border-collapse: collapse;
+    font-size: 22px;
+    font-family: Georgia, serif;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table-chinese th,
+.styled-table-chinese td {
+    padding: 14px 14px;
+}
+
+.styled-table-chinese tbody tr {
+    border-bottom: 1px solid #fff;
+}
+
+.styled-table-chinese tbody tr:nth-of-type(even) {
+    background-color: rgb(190,195,198,0.5);
+}
+
+.styled-table-chinese tbody tr {
+	text-align: center;
+	background-color: #fff;
+    color: #000;
+	font-size: 22px;
+}
+
+.dropdown {
+	text-align: center;
+	font-size: 22px;
+	position: relative;
+	display: block;
+	border: 1px solid #000;
+	padding: 5px;
+	width: 25%;
+	color: #696969;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	padding: 12px 12px;
+	z-index: 1;
+}
+
+.dropdown:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* English section */
+
+.styled-table-english {
+	margin-right: auto;
+	margin-left: auto;
+    border-collapse: collapse;
+    font-size: 22px;
+    font-family: Georgia, serif;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	margin-bottom: 20px;
+}
+
+.styled-table-english th,
+.styled-table-english td {
+    padding: 14px 14px;
+}
+
+.styled-table-english tbody tr {
+    border-bottom: 1px solid #fff;
+}
+
+.styled-table-english tbody tr:nth-of-type(even) {
+    background-color: rgb(250,235,215,0.7);
+}
+
+.styled-table-english tbody tr {
+	text-align: center;
+	background-color: #fff;
+    color: #000;
+	font-size: 22px;
+}
+
+  /*******************************************************************/
+ /***** Starting from here: Style specific for transporttip.html ****/
+/*******************************************************************/
+
+  /*************************************/
+ /* 	Style for background images	  */
+/*************************************/
+
+.bgimg-bus {
+/* This is image taken from https://www.thestar.com.my/news/nation/2019/09/02/midi-buses-start-trial-run */
+	background-image: url("../images/bus.jpg");
+	min-height: 400px;
+}
+
+.bgimg-rental {
+/* This image is from https://www.thedrive.com/reviews/44630/best-car-rental-companies */
+	background-image: url("../images/rental.png");
+	min-height: 400px;
+}
+
+.bgimg-grab {
+/* This image is from https://www.tunneltime.io/en/kuala-lumpur-malaysia/grab */
+	background-image: url("../images/grab.jpg");
+	min-height: 400px;
+}
+
+.bgimg-train {
+/* This image is from https://www.tunneltime.io/en/kuala-lumpur-malaysia/lrt */
+	background-image: url("../images/train.jpg");
+	min-height: 400px;
+}
+
+.bgimg-bus, .bgimg-rental, .bgimg-grab, .bgimg-train {
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+  /*************************/
+ /* 	Style for lists	  */
+/*************************/
+.custom-bus li, .custom-car li, .custom-grab li, .custom-train li {
+	font-size: 22px;
+	color: #000;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+  /*************************************************/
+ /* 	Style for descriptions and subheadings	  */
+/*************************************************/
+
+.boldtips-left {
+	font-weight: bold;
+	text-align: left;
+	font-size: 30px;
+	color: #000;
+}
+
+.boldtips {
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	color: #000;
+}
+
+.localtip {
+	letter-spacing: 2px;
+	padding: 8px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(106,90,140);
+	text-align: center;
+}
+
+.localtip-desc {
+	color: rgb(75,0,130);
+	font-weight: 500;
+	font-size: 22px;
+}
+
+  /*************************************/
+ /* 	Style for external links	  */
+/*************************************/
+.exlink-train {
+	text-decoration: none;
+	margin-left: 1px;
+}
+
+.exlink-grab, .exlink-train {
+	display: block;
+	padding: 5px;
+	background: #eee;
+	text-decoration: dotted underline;
+	color: #000;
+	text-align: center;
+	letter-spacing: 3px;
+	border-radius: 80px;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 22px;
+}
+
+.exlink-grab:hover, .exlink-train:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.exlink-train {
+	text-decoration: none;
+	margin-left: 1px;
+}
+
+  /*******************************************************************/
+ /*****   Starting from here: Style specific for index.html     *****/
+/*******************************************************************/
+
+  /*************************************/
+ /* 	Style for background images	  */
+/*************************************/
+.bgimg-food, .bgimg-festival, .bgimg-tourist, .bgimg-hotels, .bgimg-transport, .bgimg-language{
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg-food{
+	/* This image is from https://www.timeout.com/kuala-lumpur/food-and-drink/best-nasi-lemak-in-kl */
+	background-image: url("../images/nasilemak.jpg");
+	min-height: 400px;
+}
+
+.bgimg-festival{
+	/* This image is from https://www.wonderfulmalaysia.com/faq/deepavali.htm */
+	background-image: url("../images/deepavali.jpg");
+	min-height: 400px;
+}
+
+.bgimg-tourist{
+	/* This image is from https://www.tripadvisor.com/Attraction_Review-g298570-d317521-Reviews-Petronas_Twin_Towers-Kuala_Lumpur_Wilayah_Persekutuan.html */
+	background-image: url("../images/twin.jpg");
+	min-height: 400px;
+}
+
+.bgimg-hotels{
+	/* This image is from https://www.tripadvisor.com/Hotel_Review-g298570-d5541565-Reviews-WOLO_Kuala_Lumpur-Kuala_Lumpur_Wilayah_Persekutuan.html */
+	background-image: url("../images/wolo4.jpg");
+	min-height: 400px;
+}
+
+.bgimg-transport{
+	/* This image is from https://www.tunneltime.io/en/kuala-lumpur-malaysia/lrt */
+	background-image: url("../images/train.jpg");
+	min-height: 400px;
+}
+
+.bgimg-language{
+	/* This image is from https://theculturetrip.com/asia/malaysia/articles/11-beautiful-words-to-make-you-fall-in-love-with-the-malay-language/ */
+	background-image: url("../images/BM-bg.jpg");
+	min-height: 400px;
+}
+
+  /*********************************/
+ /* 	Style for descriptions	  */
+/*********************************/
+.homepage{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.homepage1{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	color: #000;
+}
+
+  /*************************************************/
+ /* 	Style for internal links to other pages	  */
+/*************************************************/
+.homepage1 a {
+	font-weight: bold;
+	text-decoration: none;
+	color:rgb(90,163,189);
+}
+
+.homepage1 a:hover {
+	color: rgb(0,0,139);
+}
+
+
+
+.bgimg-holiday {
+/* This image is from https://www.holidaytourstravel.com/ */
+  background-image: url("../images/holiday.jpg");
+  min-height: 400px;
+}
+
+.bgimg-holiday {
+	position: relative;
+	opacity: 0.65;
+	z-index: -5;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+  /****************************************/
+ /***** Style for yourgroupname.html *****/
+/****************************************/
+
+  /*******************************/
+ /* 		Styling Images		*/
+/*******************************/
+
+.ppl-gallery {
+	margin-top: 50px;
+	border: 1px solid #ccc;
+}
+
+.ppl-gallery:hover {
+	border: 1px solid #777;
+}
+
+.ppl-gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.ppl-desc {
+	padding: 15px;
+	text-align: center;
+}
+
+  /******************************/
+ /* Styling Responsive Images  */
+/******************************/
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 32.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.groupdescription{
+	padding:6px;
+}
+
+  /****************************/
+ /*		 Styling Title		 */
+/****************************/
+
+.grpname, .grpdesc{
+	text-align:center;
+	position:static;
+}
+
+.grpname{
+	margin-top: 50px;
+	font-size:50px;
+}
+
+.grpdesc{
+	font-size:35px;
+}
+
+.groupdescription {
+	text-align: center;
+	font-size: 22px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ppl-desc {
+	font-size: 24px;
+}
