@@ -939,15 +939,6 @@ input[type=reset]{
 	padding: 10px;
 }
 
-.food-r {
-	color: #000;
-	text-align: justify;
-	font-size: 30px;
-	font-weight: bold;
-	padding: 10px;
-	text-align: right;
-}
-
 .food-nasi, .food-ckt {
 	color: rgb(164,116,73);
 }
@@ -964,14 +955,6 @@ input[type=reset]{
 	text-align: justify;
 	font-size: 22px;
 	padding: 10px;
-	color: #000;
-}
-
-.foodp-r {
-	text-align: justify;
-	font-size: 22px;
-	padding: 10px;
-	text-align: right;
 	color: #000;
 }
 
@@ -992,21 +975,7 @@ input[type=reset]{
 	margin-top: 8px;
 }
 
-.food-link-r {
-	padding: 5px;
-	text-decoration: none;
-	color: #000;
-	letter-spacing: 2px;
-	border: 1px solid #000;
-	border-radius: 20px;
-	font-size: 22px;
-	text-align: center;
-	width: 60%;
-	float: right;
-	margin-top: 8px;
-}
-
-.food-link:hover, .food-link-r:hover {
+.food-link:hover {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
