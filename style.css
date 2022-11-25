@@ -1,7 +1,7 @@
 /* Description: Website made by 'MyTravel' */
 /* Author: Teo Jia En, Jayne Wong, Chenise Mok */
 /* Date: 5/11/2022 */
-/* Validated: OK 20/11/2022 */
+/* Validated: OK 25/11/2022 */
 
   
   /************************************************/
@@ -1362,7 +1362,7 @@ h2 {
 
 .bgimg-bm {
 /* This image is from https://theculturetrip.com/asia/malaysia/articles/11-beautiful-words-to-make-you-fall-in-love-with-the-malay-language/ */
-	background-image: url(".bahasamelayu-bg.jpg");
+	background-image: url("bahasamelayu-bg.jpg");
 	min-height: 400px;
 }
 
