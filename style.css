@@ -456,30 +456,30 @@ header label {
 
 .bgimg-holiday {
 /* This image is from https://www.cntraveler.com/story/holiday-air-travel-will-be-a-lot-busier-this-year-says-new-data */
-  background-image: url("../images/holiday.jpg");
+  background-image: url("holiday.jpg");
   min-height: 400px;
 }
 
 .bgimg-holiday2 {
 /* This image is from https://www.destinationanalysts.com/wp-content/uploads/2020/05/image-1030x626.png*/
-  background-image: url("../images/holiday2.png");
+  background-image: url("holiday2.png");
   min-height: 400px;
 }
 
 .bgimg-holiday3 {
 /* This image is from https://www.tts.com/wp-content/uploads/2016/02/Corporate-travel-best-practices.jpg */
-  background-image: url("../images/holiday3.jpg");
+  background-image: url("holiday3.jpg");
   min-height: 400px;
 }
 
 .bgimg-holiday4 {
 /* This image is from https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80 */
-  background-image: url("../images/holiday4.jpeg");
+  background-image: url("holiday4.jpeg");
   min-height: 400px;
 }
 
   /**************************/
- /*		Styling content    */
+ /*	Styling content    */
 /**************************/
 .company-container{
 	width: 50%;
@@ -531,7 +531,7 @@ header label {
 }
 
   /********************************/
- /*		Styling external link    */
+ /*	Styling external link    */
 /********************************/
 .aboutusbutton a{
 	border: none;
@@ -555,7 +555,7 @@ header label {
 }
 
   /************************/
- /*		Styling table    */
+ /*	Styling table    */
 /************************/
 .table-aboutus tr td {
 	font: 18px/1.8 serif;
@@ -570,14 +570,14 @@ header label {
 
 
   /*********************************/
- /*		Styling image slider      */
+ /*	Styling image slider      */
 /*********************************/
 .companyimageslider{
 	max-width: 35%;
 }
 
   /**************************/
- /*		Styling lines      */
+ /*	Styling lines      */
 /**************************/
 .line {
 	top:10%;
@@ -591,7 +591,7 @@ header label {
 /**********************************************************************/
 
   /*************************************/
- /* 	Style for background images	  */
+ /* 	Style for background images   */
 /*************************************/
 .bgimg-malay, .bgimg-cny, .bgimg-indian{
 	position: relative;
@@ -605,19 +605,19 @@ header label {
 
 .bgimg-malay{
 	/* This image is from https://asianinspirations.com.au/experiences/5-important-cultural-festivals-and-celebrations-in-malaysia/ */
-	background-image: url("../images/hariraya.jpg");
+	background-image: url("hariraya.jpg");
 	min-height: 400px;
 }
 
 .bgimg-cny{
 	/* This image is from https://www.chinahighlights.com/festivals/traditional-festival/ */
-	background-image: url("../images/cny.jpg");
+	background-image: url("cny.jpg");
 	min-height: 400px;
 }
 
 .bgimg-indian{
 	/* This image is from https://www.wonderfulmalaysia.com/faq/deepavali.htm */
-	background-image: url("../images/deepavali.jpg");
+	background-image: url("deepavali.jpg");
 	min-height: 400px;
 }
 
@@ -894,25 +894,25 @@ input[type=reset]{
 
 .bgimg-laksa{
 	/* This image is from https://www.mstar.com.my/xpose/resipi/2019/06/19/laksa-sarawak */
-	background-image: url("../images/laksa.png");
+	background-image: url("laksa.png");
 	min-height: 400px;
 }
 
 .bgimg-kuehtiao{
 	/* This image is from https://rasamalaysia.com/char-kuey-teow/ */
-	background-image: url("../images/charkuehtiao.jpg");
+	background-image: url("charkuehtiao.jpg");
 	min-height: 400px;
 }
 
 .bgimg-kolo{
 	/* This image is from https://www.facebook.com/saysdotcom/photos/a.234827813221128/1007487972621771/?type=3 */
-	background-image: url("../images/kolomee.jpg");
+	background-image: url("kolomee.jpg");
 	min-height: 400px;
 }
 
 .bgimg-nasi{
 	/* This image is from https://www.timeout.com/kuala-lumpur/food-and-drink/best-nasi-lemak-in-kl */
-	background-image: url("../images/nasilemak.jpg");
+	background-image: url("nasilemak.jpg");
 	min-height: 400px;
 }
 
@@ -952,7 +952,7 @@ input[type=reset]{
 }
 
   /*************************************/
- /* 	Style for external links	  */
+ /* 	Style for external links      */ 
 /*************************************/
 .food-link{
 	padding: 5px;
@@ -1079,31 +1079,31 @@ input[type=reset]{
 
 .bgimg-twintower {
 /* This image is from https://www.tripadvisor.com/Attraction_Review-g298570-d317521-Reviews-Petronas_Twin_Towers-Kuala_Lumpur_Wilayah_Persekutuan.html */
-	background-image: url("../images/twin.jpg");
+	background-image: url("twin.jpg");
 	min-height: 400px;
 }
 
 .bgimg-batucaves {
 /* This image is from http://tickabout.com/wp-content/uploads/2018/10/batu-caves-batu-caves-malaysia-lord-murugan-statue-1540386425c8lp4.jpg */
-	background-image: url("../images/batu10.jpg");
+	background-image: url("batu10.jpg");
 	min-height: 400px;
 }
 
 .bgimg-skycab {
 /* This image is from https://www.tripadvisor.in/Attraction_Review-g298283-d645113-Reviews-Panorama_Langkawi_SkyCab-Langkawi_Langkawi_District_Kedah.html */
-	background-image: url("../images/sky2.jpg");
+	background-image: url("sky2.jpg");
 	min-height: 400px;
 }
 
 .bgimg-borneo {
 /* This image is from https://i.pinimg.com/originals/fb/41/20/fb412008ba597d89f64738c6ecb9a149.png  */
-	background-image: url("../images/borneo.png");
+	background-image: url("borneo.png");
 	min-height: 400px;
 }
 
 .bgimg-kinabalu {
 /* This image is from https://blog.tripcetera.com/wp-content/uploads/2019/05/55640761_ML.jpg */
-	background-image: url("../images/balu6.jpg");
+	background-image: url("balu6.jpg");
 	min-height: 400px;
 }
 
@@ -1153,31 +1153,31 @@ input[type=reset]{
 
 .bgimg-wolo {
 /* This image is from https://www.tripadvisor.com/Hotel_Review-g298570-d5541565-Reviews-WOLO_Kuala_Lumpur-Kuala_Lumpur_Wilayah_Persekutuan.html */
-	background-image: url("../images/wolo4.jpg");
+	background-image: url("wolo4.jpg");
 	min-height: 400px;
 }
 
 .bgimg-blue {
 /* This image is from https://www.tripadvisor.com/Hotel_Review-g298303-d564445-Reviews-Cheong_Fatt_Tze_The_Blue_Mansion-George_Town_Penang_Island_Penang.html  */
-	background-image: url("../images/blue.jpg");
+	background-image: url("blue.jpg");
 	min-height: 400px;
 }
 
 .bgimg-lake {
 /* This image is from https://www.tripadvisor.com/Hotel_Review-g298294-d308041-Reviews-The_Lakehouse_Cameron_Highlands-Ringlet_Cameron_Highlands_Pahang.html  */
-	background-image: url("../images/lakehouse.jpg");
+	background-image: url("lakehouse.jpg");
 	min-height: 400px;
 }
 
 .bgimg-rock {
 /* This image is from https://www.tripadvisor.com/Hotel_Review-g635527-d1485478-Reviews-Hard_Rock_Hotel_Penang-Batu_Ferringhi_Penang_Island_Penang.html */
-	background-image: url("../images/rock.jpg");
+	background-image: url("rock.jpg");
 	min-height: 400px;
 }
 
 .bgimg-westin {
 /* This image is from https://www.tripadvisor.com/Hotel_Review-g298283-d301798-Reviews-The_Westin_Langkawi_Resort_Spa-Langkawi_Langkawi_District_Kedah.html   */
-	background-image: url("../images/westin.jpg");
+	background-image: url("westin.jpg");
 	min-height: 400px;
 }
 
@@ -1224,7 +1224,7 @@ input[type=reset]{
 }
 
   /********************************/
- /* 		Styling Table		 */
+ /* 		Styling Table	 */
 /********************************/
 
 .table-rock td, .table-rock th,
@@ -1249,7 +1249,7 @@ input[type=reset]{
 /****************************************/
 
   /*******************************/
- /* 		Styling Images		*/
+ /* 		Styling Images	*/
 /*******************************/
 
 .ppl-gallery {
@@ -1307,7 +1307,7 @@ input[type=reset]{
 }
 
   /****************************/
- /*		 Styling Title		 */
+ /*	Styling Title	     */
 /****************************/
 
 .grppage h1, 
@@ -1334,7 +1334,7 @@ h2 {
 
 
   /************************************/
- /*		 Styling descriptions		 */
+ /*  Styling descriptions	     */
 /************************************/
 .groupdescription {
 	font-size: 22px;
@@ -1357,24 +1357,24 @@ h2 {
 /********************************************************************/
 
   /*************************************/
- /* 	Style for background images	  */
+ /* 	Style for background images   */
 /*************************************/
 
 .bgimg-bm {
 /* This image is from https://theculturetrip.com/asia/malaysia/articles/11-beautiful-words-to-make-you-fall-in-love-with-the-malay-language/ */
-	background-image: url("../images/bahasamelayu-bg.jpg");
+	background-image: url(".bahasamelayu-bg.jpg");
 	min-height: 400px;
 }
 
 .bgimg-chinese {
 /* This image is from https://towardsdatascience.com/automate-flash-cards-creation-for-language-learning-with-python-67871f4d23b3 */
-	background-image: url("../images/chinese1.jpg");
+	background-image: url("chinese1.jpg");
 	min-height: 400px;
 }
 
 .bgimg-eng {
 /* This image is from https://www.shutterstock.com/image-vector/english-language-background-147327044 */
-	background-image: url("../images/bg-eng.jpeg");
+	background-image: url("bg-eng.jpeg");
 	min-height: 400px;
 }
 
@@ -1564,25 +1564,25 @@ h2 {
 
 .bgimg-bus {
 /* This is image taken from https://www.thestar.com.my/news/nation/2019/09/02/midi-buses-start-trial-run */
-	background-image: url("../images/bus.jpg");
+	background-image: url("bus.jpg");
 	min-height: 400px;
 }
 
 .bgimg-rental {
 /* This image is from https://www.thedrive.com/reviews/44630/best-car-rental-companies */
-	background-image: url("../images/rental.png");
+	background-image: url("rental.png");
 	min-height: 400px;
 }
 
 .bgimg-grab {
 /* This image is from https://www.tunneltime.io/en/kuala-lumpur-malaysia/grab */
-	background-image: url("../images/grab.jpg");
+	background-image: url("grab.jpg");
 	min-height: 400px;
 }
 
 .bgimg-train {
 /* This image is from https://www.tunneltime.io/en/kuala-lumpur-malaysia/lrt */
-	background-image: url("../images/train.jpg");
+	background-image: url("train.jpg");
 	min-height: 400px;
 }
 
@@ -1638,7 +1638,7 @@ h2 {
 }
 
   /*************************************/
- /* 	Style for external links	  */
+ /* 	Style for external links      */
 /*************************************/
 
 .exlink-grab, .exlink-train {
@@ -1664,7 +1664,7 @@ h2 {
 /*******************************************************************/
 
   /*************************************/
- /* 	Style for background images	  */
+ /* 	Style for background images   */
 /*************************************/
 .bgimg-food, .bgimg-festival, .bgimg-tourist, .bgimg-hotels, .bgimg-transport, .bgimg-language{
 	position: relative;
@@ -1678,37 +1678,37 @@ h2 {
 
 .bgimg-food{
 	/* This image is from https://www.timeout.com/kuala-lumpur/food-and-drink/best-nasi-lemak-in-kl */
-	background-image: url("../images/nasilemak.jpg");
+	background-image: url("nasilemak.jpg");
 	min-height: 400px;
 }
 
 .bgimg-festival{
 	/* This image is from https://www.wonderfulmalaysia.com/faq/deepavali.htm */
-	background-image: url("../images/deepavali.jpg");
+	background-image: url("deepavali.jpg");
 	min-height: 400px;
 }
 
 .bgimg-tourist{
 	/* This image is from https://www.tripadvisor.com/Attraction_Review-g298570-d317521-Reviews-Petronas_Twin_Towers-Kuala_Lumpur_Wilayah_Persekutuan.html */
-	background-image: url("../images/twin.jpg");
+	background-image: url("twin.jpg");
 	min-height: 400px;
 }
 
 .bgimg-hotels{
 	/* This image is from https://www.tripadvisor.com/Hotel_Review-g298570-d5541565-Reviews-WOLO_Kuala_Lumpur-Kuala_Lumpur_Wilayah_Persekutuan.html */
-	background-image: url("../images/wolo4.jpg");
+	background-image: url("wolo4.jpg");
 	min-height: 400px;
 }
 
 .bgimg-transport{
 	/* This image is from https://www.tunneltime.io/en/kuala-lumpur-malaysia/lrt */
-	background-image: url("../images/train.jpg");
+	background-image: url("train.jpg");
 	min-height: 400px;
 }
 
 .bgimg-language{
 	/* This image is from https://theculturetrip.com/asia/malaysia/articles/11-beautiful-words-to-make-you-fall-in-love-with-the-malay-language/ */
-	background-image: url("../images/bahasamelayu-bg.jpg");
+	background-image: url("bahasamelayu-bg.jpg");
 	min-height: 400px;
 }
 
@@ -1803,7 +1803,7 @@ h2 {
 }
 
   /****************************/
- /*		 Styling Title		 */
+ /*  Styling Title	     */
 /****************************/
 
 .grpname, .grpdesc{
